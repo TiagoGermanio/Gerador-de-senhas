@@ -2,8 +2,8 @@
 
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
-const input = document.getElementsByClassName('h4');
-
+const generateNow = document.querySelector('.generated-password');
+const textInner = document.querySelector('#generated-password h4');
 // functions
 const getLetterLowerCase = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -41,16 +41,15 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
 };
 // eventos 
 generatePasswordButton.addEventListener("click", () => {
-    generatePassword(
+        generatePassword(
         getLetterLowerCase,
         getLetterUpperCase,
         getNumber,
         getSymbol,
     );
 });
-console.log(generatePassword)
 function copyToClipboard (){
-    navigator.clipboard.writeText(input.value).then(()=>{
+    navigator.clipboard.writeText(textInner.innerText).then(()=>{
         alert('Sua senha foi copiada para o clipboard')
 
     })
