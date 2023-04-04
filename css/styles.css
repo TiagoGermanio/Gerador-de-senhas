@@ -1,0 +1,137 @@
+*{
+    @import url('https://fonts.cdnfonts.com/css/harry-potter')
+
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffff;
+}
+html, 
+
+body{
+    height: auto;
+    min-height: 100vh;
+}
+html{
+    background: linear-gradient(180deg, rgba(168, 131, 58, 0.543)0%, rgb(28, 21, 12) 100%);
+}
+input:focus {
+    outline: none;
+}
+.inputtext{
+    color: #000;
+}
+#register-container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(25, 25, 33, 0.25) 0рх 13рх 27рх -5рх,
+    rgba(44, 35, 35, 0.3) 0px 8px 16px -8px;
+    box-shadow: none;
+}
+#register-banner{
+    background: url('../img/harry.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 7px;
+
+}
+#banner-leyer{
+    font-family: 'Harry Potter', sans-serif;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: initial;
+    text-shadow: #333;
+}
+#register-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    word-spacing: 100rem;
+}
+#register-form{
+    background-color: rgba(0, 0, 0, 0.52);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+#register-form h2{
+    font-family: 'Harry Potter', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+#register-form p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+.form-control {
+    font-weight: bold;
+    margin-bottom: .6rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control label{
+    font-size: bold;
+    margin-bottom: .6rem;
+}
+.form-control input{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding: .6rem 0;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+#generate-password{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+#generate-password:hover{
+    color: rgb(82, 82, 234);
+    font-weight: bold;
+}
+#register-form #generated-password{
+    border: solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#register-form #generated-password p {
+    color: coral;
+    margin-bottom: 0.5rem;
+}
+#register-form input[type="submit"]{
+    background-color: rgb(89, 160, 105);
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+
+}
+#register-form input[type="submit"]:houver {
+    opacity: 1;
+}
+.btn{
+background-color: rgba(227, 239, 245, 0.614);
+border-radius: 7px;
+cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
